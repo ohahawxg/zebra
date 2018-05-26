@@ -21,7 +21,7 @@ import org.apache.logging.log4j.core.layout.PatternLayout;
 
 public class LoggerLoader {
 
-	private static String LOG_ROOT = System.getProperty("zebra.log.dir", "/data/applogs/zebra");
+	private static String LOG_ROOT = System.getProperty("zebra.log.dir", "applogs/zebra");
 
 	private static LoggerContext context = null;
 

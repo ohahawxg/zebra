@@ -105,7 +105,7 @@ public class DataSourceRouterImplTest {
 	@Test
 	public void testCase2() {
 		String sql = "SELECT N.GroupID, F.FollowNoteID, F.UserID, F.NoteId "
-		      + "FROM DP_GroupFollowNote F INNER JOIN DP_GroupNote N ON N.NoteID = F.NoteID "
+		      + "FROM DP_GroupFollowNote F,DP_ABD t1 INNER JOIN DP_ABC N ON N.NoteID = F.NoteID "
 		      + "WHERE F.UserID = ? AND F.NoteClass <> 3";
 		List<Object> params = Arrays.asList((Object) 200);
 
